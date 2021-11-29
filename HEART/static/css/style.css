@@ -1,0 +1,103 @@
+body{background:url(coeur.jpg);}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+form{ 
+    margin: auto 240px;
+    padding: 20px;
+    box-shadow: 2px 3px 4px rgb(139, 137, 146);
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid rgb(2, 37, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:radial-gradient(rgb(8, 8, 8), white);
+}
+
+.btn:hover{
+   font-weight: bold;
+   background:radial-gradient(rgb(128, 126, 126),rgb(1, 61, 156));
+   letter-spacing: 3px;
+}
+.btn{
+    margin: auto;
+    width: 90%;
+    border-radius: 8px;
+    padding: 5px 0px;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(2, 47, 98);
+}
+input{
+    padding: 10px;
+    margin: 5px 0px;
+    border: none;
+    outline: none;
+    background-color: rgb(223, 221, 221);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(189, 188, 188, 0.2), 0 1px -3px inset rgba(255,255,255,0.2);}
+
+    input:focus-visible{
+        background-color: rgb(255, 255, 255);
+        outline: blue;
+        border: 1px solid blue;
+        color: black;
+        text-shadow: none;
+        font-weight: 100;
+        font-size: 12px;
+    }
+    ::placeholder{
+        color: rgb(10, 10, 10);
+        font-size: 18px;}
+
+    .response{
+        width: 380px;
+        height: 280px;
+        border-radius: 5px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        float: right;
+        top: -490px;
+        right: 140px;
+        background: radial-gradient(rgba(190, 189, 189, 0.719),rgba(1, 41, 93, 0.692));
+
+    }
+.header{
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+    text-decoration:overline;
+}
+.stat{
+    margin:40px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+#comment{margin: auto;
+    color:white;
+    font-size: 28px;
+padding: 5px;
+border-radius: 5px;}
+
+.dowwn{
+    margin: auto;
+}

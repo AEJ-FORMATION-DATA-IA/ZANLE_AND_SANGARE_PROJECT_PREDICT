@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>HEART PREDIC</title>
+</head>
+<body>
+<main>
+    <form action="{{ url_for('predict')}}"method="post">
+            <input type="text" name="AGE" placeholder="AGE" required>
+            <input type="number" max="1" min="0" name="SEXE" placeholder="SEXE" required>
+            <input type="number" max="3" min="0" name="TDT" placeholder="TDT" required>
+            <input type="number" name="PAR" placeholder="PAR" required>
+            <input type="number" name="CHOLESTEROL" placeholder="CHOLESTEROL" required>
+            <input type="number" max="1" min="0" name="GAJ" placeholder="GAJ" required>
+            <input type="number" max="2" min="1" name="ECG" placeholder="ECG" required>
+            <input type="number" name="FCMAX" placeholder="FCMAX" required>
+            <input type="number" max="1" min="0" name="ANGINE" placeholder="ANGINE" required>
+            <input type="number" name="DEPRESSION" placeholder="DEPRESSION" required>
+            <input type="number" max="1" min="0" name="PENTE" placeholder="PENTE" required> <br>
+            <button type="submit" class="btn">PREDIRE</button>
+    </form>
+    <div class="response">
+        <h1 class="header">VOTRE STATUT</h1>
+        <div> <h1 id="stat" class="stat">{{prediction_text }}</h1> </div>
+        <div class="dowwn"><h3 id="comment">Afficher l'interpretation</h3></div>
+    </div>
+ </main>
+ <script type="text/javascript" src="{{ url_for('static', filename='css/script.js') }}"></script>
+</body>
+</html>
